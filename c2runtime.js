@@ -24515,7 +24515,7 @@ cr.getObjectRefTable = function () { return [
 	cr.system_object.prototype.acts.SetLayoutScale,
 	cr.system_object.prototype.acts.SetLayerVisible,
 	cr.plugins_.Sprite.prototype.acts.SetX,
-	cr.plugins_.Mouse.prototype.cnds.OnAnyClick,
+	cr.plugins_.Touch.prototype.cnds.OnDoubleTapGestureObject,
 	cr.plugins_.Sprite.prototype.cnds.CompareFrame,
 	cr.plugins_.Touch.prototype.cnds.IsTouchingObject,
 	cr.plugins_.Touch.prototype.cnds.OnDoubleTapGesture
