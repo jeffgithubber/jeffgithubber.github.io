@@ -24504,6 +24504,7 @@ cr.getObjectRefTable = function () { return [
 	cr.system_object.prototype.exps.angle,
 	cr.plugins_.Sprite.prototype.acts.SetWidth,
 	cr.system_object.prototype.exps.distance,
+	cr.plugins_.Touch.prototype.cnds.OnHoldGesture,
 	cr.plugins_.Mouse.prototype.cnds.OnRelease,
 	cr.plugins_.Sprite.prototype.cnds.IsVisible,
 	cr.behaviors.Physics.prototype.acts.ApplyForceAtAngle,
