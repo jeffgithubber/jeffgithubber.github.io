@@ -24423,8 +24423,8 @@ cr.behaviors.solid = function(runtime)
 	behaviorProto.acts = new Acts();
 }());
 cr.getObjectRefTable = function () { return [
-	cr.plugins_.Browser,
 	cr.plugins_.Audio,
+	cr.plugins_.Browser,
 	cr.plugins_.Facebook,
 	cr.plugins_.Keyboard,
 	cr.plugins_.Mouse,
