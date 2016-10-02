@@ -1,12 +1,11 @@
 ﻿CACHE MANIFEST
-#1475166351
+#1475395717
 data.js
 c2runtime.js
 jquery-2.1.1.min.js
 images/player-sheet0.png
 images/player-sheet1.png
 images/player-sheet2.png
-images/playerbox-sheet0.png
 images/snailenemy-sheet0.png
 images/edgemarker-sheet0.png
 images/pickup_object-sheet0.png
@@ -35,6 +34,7 @@ images/grass-sheet0.png
 images/chritmastree-sheet0.png
 images/whitebg.png
 images/popups-sheet0.png
+images/popups-sheet1.png
 images/gamepanel-sheet0.png
 images/pirate-sheet0.png
 images/fb_highscores-sheet0.png
