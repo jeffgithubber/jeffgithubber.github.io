@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<meta name="Generator" content="Jeff Williams">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="title" content="meta title please insert">
+<meta name="description" content="Online portfolio of Australian web developer Jeff Williams">
+<meta name="keywords" content="jeff williams, portfolio, freelance, web developer">
+<meta name="robots" content="index, follow">
+<!--JAVASCRIPT libraries-->
+<script type="text/javascript" src="scripts/jquery/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="scripts/html5.js"></script>
+<script type="text/javascript" src="scripts/swfobject.js"></script>
+<script type="text/javascript" src="scripts/jquery/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="scripts/jquery/jquery.jqzoom.js"></script>
+<script type="text/javascript" src="scripts/jquery/cufon/cufon-yui.js"></script>
+<script type="text/javascript" src="scripts/jquery/cufon/cufon-replace.js"></script>
+<script type="text/javascript" src="scripts/jquery/cufon/fonts/Levenim_MT_400.font.js"></script>
+<script type="text/javascript" src="scripts/jquery/cufon/fonts/Levenim_MT_400-Levenim_MT_700.font.js"></script>
+<link rel="stylesheet" type="text/css" href="scripts/shadowbox/shadowbox.css">
+<script type="text/javascript" src="scripts/shadowbox/shadowbox.js"></script>
+<!--END JAVASCRIPT libraries-->
+
+<link type="text/css" href="../jquery_zoom.css" rel="stylesheet">
+<link type="text/css" href="../folio_form.css" rel="stylesheet">
+<link type="text/css" href="../folio_menu.css" rel="stylesheet">
+<link type="text/css" href="../folio_styles.css" rel="stylesheet">
+<script type="text/javascript" src="scripts/jquery/flow_player_tooltip.js"></script>
+<script type="text/javascript" src="scripts/jquery/jquery_tile_rollovers.js"></script>
+<script type="text/javascript" src="scripts/jquery/jquery_accordion.js"></script>
+<script type="text/javascript">	    
+//<![CDATA[
+	function checkToolTip(){
+		if ($('#show_tooltips').attr('checked')) {			
+			$(".tooltip").css('visibility','visible');
+		}else{
+			$(".tooltip").css('visibility','hidden');			
+		}
+	}
+	$(document).ready(function(){	
+		Shadowbox.init({flashParams: { bgcolor: '#ffffff'}});		
+		$(".tip[title]").tooltip({		
+			onBeforeShow: function() {
+				checkToolTip();
+			}
+		});		
+		checkToolTip();
+		var file_name = window.location.pathname.split('/')[2];		
+		var is_found = false;
+		$.each($('#primary_menu ul a'), function() {
+			if ($(this).attr('href') == file_name){
+				is_found =true;
+				$(this).addClass('active');
+			}
+		});
+		if (!is_found){
+			$('#primary_menu li:first > a').addClass('active');
+		}				
+	});
+//]]>
+</script>
+<script type="text/javascript" src="scripts/jquery/jquery_fix_dimensions.js"></script>
+<script type="text/javascript" src="scripts/jquery/jquery_valign.js"></script>
+
+<!--[if IE]>  
+    <link rel="stylesheet" type="text/css" href="IE_styles.css"/>
+<![endif]-->
+<!--[if lt IE 8]>
+    <link rel="stylesheet" type="text/css" href="IE_pre_8_styles.css"/>    
+<![endif]-->
+<!--[if lt IE 7]>
+    <link rel="stylesheet" type="text/css" href="IE_pre_7_styles.css"/>    
+<![endif]-->
+
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<script type="text/javascript">
+//<![CDATA[
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27635494-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+//]]>
+</script>
+</head>
+
+<body>
+<div id="page_wrap">
+  <div id="left_col">
+    <div id="logo">
+      <div id="logo_flash"> <a href="index.html"><img src="../images/struct/spiral.jpg" width="105" height="84" border="0"/></a> </div>
+      <script type="text/javascript"><!--        
+        var flashvars = {};
+		var params = {
+          menu: "false",
+          wmode: "transparent"
+        };
+        var attributes = {
+          id: "flhome_icon",
+          name: "flhome_icon"
+        };
+        swfobject.embedSWF("flash/logo5.swf", "logo_flash", "105", "84", "9", null, flashvars, params, attributes);
+// --></script> 
+    </div>
+    <div id="primary_menu" class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="work.html">Projects / Skills</a></li>
+        <li><a href="personal.html">Personal</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <!--end menu--> 
+    
+  </div>
+  <!--end left_col-->
+  
+  <div id="right_col"> <a href="index.html" id="jeff_williams">Jeff Williams</a>
+    <div id="right_col_content"> 
+      
+      <!--end top_right-->
+      <div id="main_content">
+        <div id="left_region_main"><!-- TemplateBeginEditable name="content" -->content<!-- TemplateEndEditable --> </div>
+        <!--end left_region_main-->
+        
+        <div id="right_region_main"><!-- TemplateBeginEditable name="right_region" -->right_region<!-- TemplateEndEditable --> </div>
+        <!--end right_region_main-->
+        
+        <div class="clearb"></div>
+      </div>
+      <!--end main_content--> 
+    </div>
+    <!--end right_col_content--> 
+    
+  </div>
+  <!--end right_col-->
+  
+  <div class="clearb"></div>
+  <div id="footer">
+    <div id="email_link"> contact&nbsp;&nbsp;&nbsp; <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#101;&#102;&#102;&#114;&#119;&#105;&#108;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#106;&#101;&#102;&#102;&#114;&#119;&#105;&#108;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></div>
+    <div id="social_media"> <a href="gplus.to/JeffRWilliams" target="_blank" id="icon_googleplus">GooglePlus</a> <a href="http://au.linkedin.com/pub/jeff-williams/1b/371/694" target="_blank" id="icon_linkedin" >LinkedIn</a> <a href="http://facebook.com/jeff.r.williams" target="_blank" id="icon_facebook" >Facebook</a> </div>
+  </div>
+</div>
+</body>
+</html>

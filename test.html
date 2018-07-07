@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+
+<script type="text/javascript" src="scripts/jquery/js/jquery-1.4.2.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+	
+		var num_of_circles = $('#circle_cont .circle').length;
+		var degress = 360 / num_of_circles;
+		
+		var circle_cont_x = parseFloat($('#circle_cont').css('width'))/2;
+		var circle_cont_y = parseFloat($('#circle_cont').css('height'))/2;
+		
+		var circle_x_offset = parseFloat($('.circle').css('width'))/2;
+		var circle_y_offset = parseFloat($('.circle').css('height'))/2;
+		
+		var pi = Math.PI;
+		var diameter = 150;
+		
+		var count = -90;
+		$.each($('#circle_cont .circle'), function() {
+			count += degress;
+			var radians = count * (pi /180);
+			
+			var y_trans = Math.sin(radians) * diameter; 
+			var x_trans = Math.cos(radians) * diameter; 
+			
+			$(this).css('position', 'absolute');
+			$(this).css('left', (x_trans+circle_cont_x - circle_x_offset)  + 'px');
+			$(this).css('top', (y_trans+circle_cont_y - circle_y_offset) + 'px');
+			//$(this).html(count);
+		});
+		$('#circle_creator').css('position', 'absolute');
+		var calc_x = circle_cont_x - parseFloat($('#circle_creator').css('width'))/2;
+		$('#circle_creator').css('left', calc_x +'px');
+		var calc_y = circle_cont_y - parseFloat($('#circle_creator').css('height'))/2;
+		$('#circle_creator').css('top', calc_y +'px');
+
+	
+	
+	
+	var c_canvas = document.getElementById("c")
+var context = c_canvas.getContext("2d")
+
+for (x = 0.5; x < 500; x += 10) {
+  context.moveTo(x, 0)
+  context.lineTo(x, 375)
+}
+context.strokeStyle = "#000"
+context.stroke()
+	
+	
+	});
+	
+	
+	
+
+</script>
+
+
+<style type="text/css">
+
+#circle_cont{
+	position:relative;
+	background-color:yellow;
+	height:500px;
+	width:500px;
+		
+}
+
+.circle{
+		background:red;
+		height:40px;
+		width:40px;
+		display:block;
+}
+#circle_creator{
+		background:purple;
+		height:80px;
+		width:80px;
+		display:block;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+
+<div id="circle_cont">
+
+<div id="circle_creator"></div>
+
+    <div class="circle"></div>    
+	<div class="circle"></div>
+	<div class="circle"></div>
+	<div class="circle"></div>
+	<div class="circle"></div>
+	<div class="circle"></div>
+	<div class="circle"></div>
+
+</div>
+
+
+<canvas id="c" width="800" height="600"></canvas>
+
+</body>
+</html>

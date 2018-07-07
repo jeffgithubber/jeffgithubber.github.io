@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=class\ GameApplet
+comment0.text=\nGame\ applet\ serves\ as\ the\ user\ interface\ to\ the\ game\ \n\nAuthor\ \:\ Jeff\ Williams\ \nVersion\ \:\ GameApplet1.0\n
+comment1.target=guessResponse
+comment10.params=
+comment10.target=void\ init()
+comment11.target=restart
+comment2.target=game1
+comment3.target=testGuess
+comment4.target=guess
+comment5.target=countField
+comment6.target=promptGuess
+comment7.target=promptCount
+comment8.target=promptTitle
+comment9.params=e
+comment9.target=void\ actionPerformed(ActionEvent)
+numComments=12

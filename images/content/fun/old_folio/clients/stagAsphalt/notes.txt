@@ -1,0 +1,10 @@
+All movies must have the same background and frame rate
+
+setupall the movies like mclv6.swf
+
+on the first frame of the actions you must make the name of the movieClip + loaded equal to true eg.
+sun.swf
+would be sunLoaded.swf
+This is done so the preloader does not load something that has already been loaded.
+
+if i am going to use it I must change Andy's buttons

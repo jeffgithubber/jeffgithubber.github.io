@@ -1,0 +1,876 @@
+/*
+-----------------------------------------------
+Site Online Portfolio
+Author:   Jeff Williams
+Version:  Date V1.0
+----------------------------------------------- */
+
+/*HTML SETUP*******************************************************************/
+
+/*****************
+browsers interpret margin and padding a little differently, 
+we'll remove all default padding and margins and
+set them later on
+******************/
+* {
+margin:0;
+padding:0;
+
+
+}
+
+ul, dl, ol{
+	margin:0.5em 0.0em .5em 1.0em;
+	padding:0.5em 0.0em .5em 1.0em;
+}
+li{
+	padding-bottom:5px;
+	line-height:1.5em;
+}
+
+.searchhilite{
+background-color:red;
+
+}
+
+/*you must compensate for the scroll bar for mozilla though because the margin and padding is removed*/
+option{
+	padding-right:.5em;
+}
+
+html{
+	border:20px solid #211f20;
+	background:url(images/struct/spiral_bot_right.jpg) bottom right no-repeat #fff;
+}
+
+#page_wrap{
+	background-image:url(images/struct/line_bg.gif);
+	background-repeat:repeat-x;
+	background-position:0px 50px;
+
+}
+
+body{	
+	font-family:Helvetica, Arial, sans-serif;	
+	line-height: 1.0em;
+	width:auto;
+	font-size:12px;	
+	color:#5a5758;
+	background:url(images/struct/left_col_bg.gif) top left repeat-y;
+}
+
+img{
+	border:0px;
+}
+img.padding_bottom{
+	padding-bottom:16px;
+}
+
+.clearb{
+	clear:both;
+	height:0px;
+	font-size:0px;
+	line-height:0px;
+
+}
+
+/*
+set font size for all divs,
+this overrides some body rules
+*/
+div {
+   font-size: 1em;
+}
+
+img{
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+
+
+/*fix Disappearing List Background Bug */
+ul, ol, dl { position: relative; }
+
+
+.header_spacer{
+	border-bottom:3px solid #231f20;
+	padding-top:8px;
+	margin-bottom:8px;
+}
+
+
+/*END HTML SETUP*******************************************************************/
+
+
+
+/*START LAYOUT ELEMENTS************************************************************/
+
+#logo{
+	padding-bottom:20px;
+	width:105px;
+	height:84px;
+}
+
+#jeff_williams{
+	background:url(images/struct/jeff_williams.jpg) no-repeat;
+	width:168px;
+	height:38px;
+	text-indent:-9999px;
+	outline:none;
+	pointer:cursor;
+	display:block;
+	float:left;
+	margin-top:32px;
+	margin-left:20px;
+}
+
+
+#footer{
+	position:absolute;  
+	right:0px; 
+	background:url(images/struct/footer.png); 
+	width:291px /*331*/; 
+	height:12px /*55*/; 
+	z-index:100;
+	padding:20px;
+}
+#footer, #footer a{
+	color:#5a5758;
+
+}
+
+#email_link{
+	float:left;
+}
+#icon_facebook{
+	background:url(images/struct/icon_facebook.gif) no-repeat;
+}
+#icon_linkedin{
+	background:url(images/struct/icon_linkedin.gif) no-repeat;
+}
+#icon_googleplus{
+	background:url(images/struct/icon_googleplus.gif) no-repeat;	
+}
+#social_media{
+	float:right;
+	margin-top:-3px;
+}
+#social_media a{
+	background-repeat:no-repeat;
+	text-indent:-9999px;
+	outline:none;
+	cursor:pointer;
+	width:16px;
+	height:17px;
+	display:block;
+	float:left;
+	margin-right:5px;
+}
+
+
+
+.image_heading{
+	display:block;
+	height:230px;
+	width:111px;	
+}
+
+#left_col{
+	width:119px;
+	left:20px;
+	position:absolute;
+		
+}
+
+#right_col{		
+	margin-left:128px;		
+}
+
+#top_right{
+	float:right;
+	width:230px;
+
+	text-align:right;
+	margin-top:40px;
+	margin-bottom:40px;
+	display:block;
+}
+
+
+#left_region_main{
+	position:absolute;
+	left:147px;
+	margin-left:20px;
+	width:349px;
+	font-size:12px;
+	padding-bottom:28px;
+}
+
+
+#right_region_main{
+	margin-left:385px;
+	min-width:442px;
+	font-size:12px;
+	padding-bottom:100px;
+	padding-right:13px;
+
+
+
+}
+
+
+#brand_images{
+	margin:0px;
+	padding:0px;
+}
+
+#brand_images li{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	position:absolute;
+}
+
+
+#brand_listing{
+	margin:0px;
+	padding:0px;	
+}
+#brand_listing li{
+	maring:0px;
+	padding:0px;
+	float:left;
+	list-style:none;
+	padding-right:8px;
+	width:111px;
+}
+#brand_listing li.last_item,
+#brand_listing li.list_break
+{
+	padding-right:0px;
+
+}
+#brand_listing li a{
+	text-decoration:none;
+	color:#211f20;
+	font-size:10px;
+
+}
+#brand_listing .title{
+	font-weight:bold;
+	border-top:3px solid #231f20;
+	padding-top:7px;
+	margin-top:8px;
+	padding-bottom:3px;
+	font-size:11px;
+	min-height:20px;			
+	border-bottom:1px solid #231f20;
+	padding-bottom:8px;
+	margin-bottom:8px;
+	line-height:1.2em;
+
+}
+
+
+#main_content{
+	clear:both;
+}
+
+#right_col_content{
+	width:auto;
+	margin-right:8px;
+	padding-top:104px;	
+}
+
+.tile_list{
+	margin:0px;
+	padding:0px;
+}
+
+
+.tile_list li{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	margin-right:8px;
+	margin-bottom:8px;
+	height:111px;
+	width:111px;
+	float:left;
+	position:relative;	
+}
+.tile_list.tile_list_small li{	
+	height:51px;
+	width:51px;
+}
+
+#home_list.tile_list li{
+	width:446px;
+	height:111px;
+	background:url(images/struct/main_recess.jpg);
+	
+}
+
+
+
+.tile_list li.last_item,
+.tile_list li.list_break
+{
+	margin-right:0px;
+} 
+
+.tile_list li .description{
+	background-color:#211f20;
+	display:block;
+	position:absolute;
+	width:101px;/*111*/
+	padding:3px 5px 8px 5px;
+	left:0px;
+	top:0px;
+	margin-top:94px;
+	z-index:2;	
+}
+
+
+.tile_list .title{
+	padding-bottom:3px;
+	color:#fff;
+	
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+
+
+.tile_list.rollover_list li .description{
+	height:111px;
+	width:111px;
+	position:absolute;
+	margin:0px;
+	padding:0px;	
+}
+.tile_list.tile_list_small.rollover_list li .description{
+	height:51px;
+	width:51px;
+}
+
+
+
+.tile_list.rollover_list li .description_inner
+{
+	height:111px;
+	width:111px;
+	position:relative;
+}
+.tile_list.tile_list_small.rollover_list li .description_inner{
+	height:51px;
+	width:51px;
+}
+
+#home_list{
+	width:442px;
+}
+
+#home_list .description{
+	width:436px;/*468*/
+	padding:0px 5px 0px 5px;
+		
+}
+#home_list .description_inner{
+	height:111px;
+	width:435px;
+	position:relative;
+	color:#fff;
+}
+#home_list .valign{
+	width:435px;/*468*/	
+	padding:0px;
+}
+#home_list.tile_list img{
+	margin-left:52px;	
+}
+#home_list h3{
+	color:#fff;
+	font-size:16px;
+	padding-bottom:6px;
+}
+#home_list .sub_title{
+	font-size:13px;
+	padding-bottom:5px;	
+}
+#home_list .sub_detail{
+	font-size:10px;
+}
+#home_list a{
+	text-decoration:none;
+}
+
+
+.tile_list.rollover_list li .valign{
+	width:101px;/*111*/
+	padding:0px 5px 0px 5px;
+}
+.tile_list.tile_list_small.rollover_list li .valign{
+	width:41px;/*51*/
+}
+
+
+
+.tile_list.rollover_list{
+
+}
+
+.valign{
+	position:absolute;
+	top:50%;
+	text-align:center;
+
+}
+
+
+.grey_divider{
+	display:block;
+	border-bottom:2px solid #c8c7c7;
+	margin-top:-1px;
+	padding-bottom:3px;	
+}
+
+.btn_expandable{
+	display:block;
+	padding:8px;
+	background:url(images/struct/btn_collapse.gif) no-repeat 8px 10px #B9B9B9;
+	color:#fff;
+	padding-left:19px;
+	font-size:12px;	
+	margin-bottom:3px;
+	cursor:pointer;
+}
+.btn_expandable:hover{
+	text-decoration:none;
+}
+.btn_expandable.expanded{
+	background-position: 8px -26px;
+	
+}
+
+.section_header{
+	display:block;
+	padding:8px;
+	background:#211f20;
+	color:#fff;
+	font-size:12px;	
+	margin-bottom:3px;
+}
+
+
+#work_list ul{
+	margin:0px;
+	padding:0px;	
+}
+#work_list li{
+	margin:0px 0px 5px 0px;
+	padding:0px;
+	list-style:none;
+	font-size:9px;
+	display:block;
+	
+}
+#work_list li a{
+	color:#211F20;
+	padding:5px;
+	display:block;
+	text-decoration:none;
+	border-top:1px solid #b9b9b9;
+	border-right:1px solid #d5d5d5;
+	border-bottom:1px solid #efefef;
+	border-left:1px solid #efefef;
+	font-size:11px;
+}
+
+#work_list li a:hover,
+#work_list li a#active_case_study
+{
+	background-color:#211F20;
+	color:#ffffff;
+}
+
+#work_list li a.has_skill{
+	background-color:#3399FF;
+	color:#fff;
+}
+#work_list li a.has_skill:hover{
+	background-color:#2075ca;
+
+}
+
+#work_list .sub_list li a{
+	border:none;
+	display:none;
+}
+#work_list .sub_list li a.has_skill{
+	display:block;
+	padding:0px;
+	margin:0px;
+	background:none;
+	color:#211F20;	
+}
+
+
+
+
+
+.right_col_sub_text{
+	width:442px;
+	margin-left:3px;
+}
+
+
+ul.small_buttons{
+	margin:8px 0px 8px -2px;
+	padding:0px;	
+}
+.small_buttons li{
+	float:left;
+	margin-right:6.5px;
+	margin-bottom:6px;
+	list-style:none;
+}
+.small_buttons li.list_break{
+	margin-right:0px;
+}
+
+.small_buttons li a{
+	padding:0px;
+	margin:0px;
+	position:relative;
+	list-style:none;
+	float:left;
+	width:53px;
+	height:54px;
+	background:url(images/struct/box_small_bg.gif) no-repeat;	
+}
+.small_buttons li a img{
+	margin:7px;
+}
+.small_buttons li a.active{
+	background-position:0px -54px;	
+}
+.small_buttons li a.active img{
+	margin:5px 0px 0px 8px;
+}
+
+
+
+.small_buttons.static li{
+	background:url(images/struct/box_small_bg.gif) no-repeat 0px -54px;
+	width:53px;
+	height:54px;
+	display:block;
+}
+.small_buttons.static li img{
+	margin:5px 0px 0px 8px;
+	
+}
+
+ul.large_buttons{
+	margin:0px 0px 0px -6px;
+	padding:0px;	
+}
+.large_buttons li{
+	float:left;
+	margin-right:1px;
+	margin-bottom:8px;
+	list-style:none;
+}
+.large_buttons li.list_break{
+	margin-right:0px;
+}
+.large_buttons li a{
+	padding:0px;
+	margin:0px;
+	position:relative;
+	list-style:none;
+	float:left;
+	background:url(images/struct/box_large_bg.gif) no-repeat 0px -118px;
+	width:118px;
+	height:118px;	
+}
+.large_buttons li a img{
+	margin:13px 0px 0px 19px;
+}
+.large_buttons li a:hover{
+	background-position:0px 0px;
+}
+.large_buttons li a:hover img{
+	margin:17px 0px 0px 12px;
+
+}
+.large_buttons.static li{
+	background:url(images/struct/box_large_bg.gif) no-repeat 0px -118px;
+	width:118px;
+	height:118px;
+	display:block;
+}
+.large_buttons.static li img{
+	margin:13px 0px 0px 19px;	
+}
+
+
+#filter_back{
+	clear:both;
+	display:block;
+}
+
+
+.access{}
+.air{}
+.adw{}
+.afb{}
+.afl{}
+.ai{}
+.ap{}
+.ajax{}
+.apache{}
+.as2{}
+.as3{}
+.asp{}
+.cmsms{}
+.cf{}
+.css{}
+.html{}
+.ecommerce{}
+.em{}
+.iis{}
+.java{}
+.jquery{}
+.json{}
+.linux{}
+.excel{}
+.office{}
+.moodle{}
+.mysql{}
+.oracle{}
+.pl{}
+.php{}
+.plesk{}
+.pm{}
+.sql_server{}
+.svn{}
+.umbraco{}
+.win_serv{}
+.wordpress{}
+.xml{}
+.amfphp{}
+/*START FONT ELEMENTS************************************************************/
+
+h1, h2, h3, h4, h5, h6 {
+ margin: 0;
+ font-weight: normal;
+
+}
+
+
+
+h1 { 
+ font-size: 1.25em; 
+ line-height: 1.5em; 
+ color: #211f20;
+ margin-bottom: .5em;
+ font-weight:bold;
+ 
+}
+h2 { 
+ font-size: 1.2em; 
+ line-height: 1.3em; 
+ margin-top: 0.9545em;
+ margin-bottom: .5em; 
+ color: #211f20;
+ font-weight:bold;
+}
+
+h3 { 
+ font-size: 1.2em;
+ line-height: 1.05em;  
+ color: #211f20;
+ font-weight:bold;
+ padding-bottom:9px;
+ margin-top:15px;
+}
+
+h4 { 
+	font-size: 1.0em; /* 16px */ 
+	line-height: 1.0em; /* 21px */ 
+	margin-top: 1.3125em; 
+	color: #211f20;
+	font-weight:bold;
+}
+
+h5 {
+	font-size: 0.9em; /* 14px */ 
+	line-height: 1.0em; /* 21px */ 
+ 	color: #211f20;
+	font-weight:bold;
+}
+
+p { 
+	font-size:1.0em;
+	line-height:1.5em;
+	margin:0 0 0.875em;
+}
+.no_margin{
+	margin:0px;
+}
+
+.small_text{
+	font-size:.8em;
+}
+
+
+
+/*END FONT ELEMENTS************************************************************/
+
+
+/*JQUERY TOOLS*/
+/*TOOLTIP STYLES**********************************************************************/
+.tooltip {
+	background:url("images/jquery_tools/tooltip/black_arrow.png") repeat scroll 0 0 transparent;
+	color:#FFFFFF;
+	display:none;
+	font-size:12px;
+	height:70px;
+	padding:25px;
+	width:235px;
+	z-index:50000;
+	line-height:16px;
+	margin-top:20px;
+}
+.tooltip a{
+	color:#fff;
+	padding-top:5px;
+	font-size:10px;
+}
+/*end TOOLTIP STYLES******************************************************************/
+
+/*END JQUERY TOOLS*/
+
+
+
+
+
+/*START HYPERLINK ELEMENTS*******************************************************/
+
+a{
+	text-decoration:none;
+	color:#3399FF;
+
+}
+a:hover{
+	text-decoration:underline;
+
+}
+
+a.block_but{
+	display:block;
+	height:10px;
+	font-size:1.2em;
+	font-weight:bold;
+	line-height:1.3em;
+	padding:5px 10px 11px 5px;
+	margin-bottom:.5em;
+	margin-top:0.9545em;	
+
+	
+	color:#fff;
+	text-decoration:none;	
+}
+
+/*END HYPERLINK ELEMENTS*******************************************************/
+
+
+
+
+/*START WYSIWYG ELEMENTS*******************************************************/
+/*All elements here will be viewable in the wysiwyg they should be copied into
+Please note that all styles must also be in lower case.
+*/
+
+
+.wysiwyg{
+	font-size:12px;
+}
+
+.blue{
+	color:#008ac9;
+}
+.pink{
+	color:#e33689;
+}
+
+.grey{
+	color:#3f5d6d;
+}
+
+
+.inline-image {
+	 background: #C4E3F2;
+	 border: 1px solid #d7d5e6;
+	 padding: 5px;
+	 float: left;
+	 margin: 3px 20px 10px 0;
+}
+
+.inline-image.plain {
+	 background:none;
+	 border: none;
+}
+
+.inline-image-right {
+	 background: #C4E3F2;
+	 border: 1px solid #d7d5e6;
+	 padding: 5px;
+	 float: right;
+	 margin: 3px 0 10px 20px;
+}
+
+
+
+
+/*
+DO NOT CHANGE THE COLOR FOR THESE STYLES. (bodytextsmall, bodytextlarge, bodytextreg) 
+YOU SHOULD ONLY CHANGE THE SIZE AND FAMILY. COLOR SHOULD BE IMPLEMENTED WITHIN THE ACTUAL
+DIV THE STYLE IS BEING USED
+*/
+.bodytextsmall{
+	font-size:9px;
+	color:#211f20;	
+}
+.bodytextlarge{
+	font-size:14px;
+	font-weight:bold;
+	font-style:italic;
+	color:#68596f;
+}
+.bodytextreg{
+	font-size:11px;
+	font-weight:lighter;
+	color:#333;
+	
+}
+
+p.pre_ul{
+	margin-bottom:0px;
+}
+
+ul.involvment_list{
+	margin-top:0px;
+	padding-top:0px;
+}
+.case_heading{
+	font-weight:bold;
+}
+
+/*END WYSIWYG ELEMENTS*******************************************************/

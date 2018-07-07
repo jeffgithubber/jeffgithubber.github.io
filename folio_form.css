@@ -1,0 +1,67 @@
+input, select, textarea{
+	border:none;
+	background-color:#fff;
+	border-top:1px solid #8e8e8d;
+	border-left:1px solid #1d1d1b;
+	border-bottom:1px solid #484a4b;
+	border-right: 1px solid #8e8e8d;
+	padding:2px;	
+}
+input, select, textarea{
+	font-size:12px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+.error{
+	color:#be0509;
+}
+input.input_image{
+	border:none;
+	background:none;
+}
+
+td.select_and_input select{
+	margin-bottom:5px;
+}
+
+#search_form{
+	float:left;
+}
+
+#search_form input{
+	float:left;	
+	margin:0px;
+	border:none;
+	padding:5px 3px;
+	background-image:url(images/meizai/input_bg.gif);
+	background-repeat:repeat-x;
+	width:82px;
+	font-size:11px;
+	font-weight:bold; 
+}
+#search_form .input_image{
+	background:none;
+	padding:0px;
+	width:23px;	
+}
+a.input_type{
+	padding:5px 3px;
+	background-image:url(images/meizai/input_bg.gif);
+	background-repeat:repeat-x;
+}
+.btn_login, .btn_register{
+	width:44px;
+	float:left;
+	text-align:left;
+	color:#000;
+	font-weight:bold;
+	text-decoration:none;
+	font-size:11px;
+}
+.btn_login{
+	margin-right:11px;
+}
+#search_btns{
+	margin-left:8px;
+	width:111px;
+	float:left;
+}

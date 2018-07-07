@@ -1,0 +1,527 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/folio_internal.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<!-- InstanceEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<meta name="Generator" content="Jeff Williams">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="title" content="meta title please insert">
+<meta name="description" content="Online portfolio of Australian web developer Jeff Williams">
+<meta name="keywords" content="jeff williams, portfolio, freelance, web developer">
+<meta name="robots" content="index, follow">
+<!--JAVASCRIPT libraries-->
+<script type="text/javascript" src="scripts/jquery/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="scripts/html5.js"></script>
+<script type="text/javascript" src="scripts/swfobject.js"></script>
+<script type="text/javascript" src="scripts/jquery/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="scripts/jquery/jquery.jqzoom.js"></script>
+<script type="text/javascript" src="scripts/jquery/cufon/cufon-yui.js"></script>
+<script type="text/javascript" src="scripts/jquery/cufon/cufon-replace.js"></script>
+<script type="text/javascript" src="scripts/jquery/cufon/fonts/Levenim_MT_400.font.js"></script>
+<script type="text/javascript" src="scripts/jquery/cufon/fonts/Levenim_MT_400-Levenim_MT_700.font.js"></script>
+<link rel="stylesheet" type="text/css" href="scripts/shadowbox/shadowbox.css">
+<script type="text/javascript" src="scripts/shadowbox/shadowbox.js"></script>
+<!--END JAVASCRIPT libraries-->
+
+<link type="text/css" href="jquery_zoom.css" rel="stylesheet">
+<link type="text/css" href="folio_form.css" rel="stylesheet">
+<link type="text/css" href="folio_menu.css" rel="stylesheet">
+<link type="text/css" href="folio_styles.css" rel="stylesheet">
+<script type="text/javascript" src="scripts/jquery/flow_player_tooltip.js"></script>
+<script type="text/javascript" src="scripts/jquery/jquery_tile_rollovers.js"></script>
+<script type="text/javascript" src="scripts/jquery/jquery_accordion.js"></script>
+<script type="text/javascript">	    
+//<![CDATA[
+	function checkToolTip(){
+		if ($('#show_tooltips').attr('checked')) {			
+			$(".tooltip").css('visibility','visible');
+		}else{
+			$(".tooltip").css('visibility','hidden');			
+		}
+	}
+	$(document).ready(function(){	
+		Shadowbox.init({flashParams: { bgcolor: '#ffffff'}});		
+		$(".tip[title]").tooltip({		
+			onBeforeShow: function() {
+				checkToolTip();
+			}
+		});		
+		checkToolTip();
+		var file_name = window.location.pathname.split('/')[2];		
+		var is_found = false;
+		$.each($('#primary_menu ul a'), function() {
+			if ($(this).attr('href') == file_name){
+				is_found =true;
+				$(this).addClass('active');
+			}
+		});
+		if (!is_found){
+			$('#primary_menu li:first > a').addClass('active');
+		}				
+	});
+//]]>
+</script>
+<script type="text/javascript" src="scripts/jquery/jquery_fix_dimensions.js"></script>
+<script type="text/javascript" src="scripts/jquery/jquery_valign.js"></script>
+
+<!--[if IE]>  
+    <link rel="stylesheet" type="text/css" href="IE_styles.css"/>
+<![endif]-->
+<!--[if lt IE 8]>
+    <link rel="stylesheet" type="text/css" href="IE_pre_8_styles.css"/>    
+<![endif]-->
+<!--[if lt IE 7]>
+    <link rel="stylesheet" type="text/css" href="IE_pre_7_styles.css"/>    
+<![endif]-->
+
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<script type="text/javascript">
+//<![CDATA[
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27635494-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+//]]>
+</script>
+</head>
+
+<body>
+<div id="page_wrap">
+  <div id="left_col">
+    <div id="logo">
+      <div id="logo_flash"> <a href="index.html"><img src="images/struct/spiral.jpg" width="105" height="84" border="0"/></a> </div>
+      <script type="text/javascript"><!--        
+        var flashvars = {};
+		var params = {
+          menu: "false",
+          wmode: "transparent"
+        };
+        var attributes = {
+          id: "flhome_icon",
+          name: "flhome_icon"
+        };
+        swfobject.embedSWF("flash/logo5.swf", "logo_flash", "105", "84", "9", null, flashvars, params, attributes);
+// --></script> 
+    </div>
+    <div id="primary_menu" class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="work.html">Projects / Skills</a></li>
+        <li><a href="personal.html">Personal</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <!--end menu--> 
+    
+  </div>
+  <!--end left_col-->
+  
+  <div id="right_col"> <a href="index.html" id="jeff_williams">Jeff Williams</a>
+    <div id="right_col_content"> 
+      
+      <!--end top_right-->
+      <div id="main_content">
+        <div id="left_region_main"><!-- InstanceBeginEditable name="content" -->
+       <script type="text/javascript">
+
+$(document).ready(function() {
+	$('.jqzoom').jqzoom({
+            zoomType: 'innerzoom',
+            preloadImages: true,
+            alwaysOn:false
+        });		
+	
+	/*
+	$('#btn_zoom_text').click(function() {
+  		$('.zoomWindow').css('display','block');
+		$('.zoomWindow img').css('left','-139px');
+		$('.zoomWindow img').css('top','-87px');		
+	});
+	*/
+
+	$(".tip[title]").tooltip();		
+	function openShadowbox(content, player, title){
+		Shadowbox.open({
+			content:    content,
+			player:     player
+		});
+	}
+	
+	$('#btn_view_larger').click(function(ev) {		
+		openShadowbox($('.zoomWrapperImage img').attr('src'), 'img', 'Title');			
+		ev.preventDefault();
+		return false;		
+	});
+
+	$('#magnify_overlay').click(function(ev) {				
+		$(this).css('display', 'none');			
+		var newE = jQuery.Event('mousemove');
+		newE.pageX = ev.pageX;
+		newE.pageY = ev.pageY;	  
+	  	// trigger an artificial click event
+	  	$(".zoomPad").trigger(newE);			
+	});
+	
+
+  	$("#overlay_pv").mousemove(function(event){
+		$('#hover_click').css('top',event.pageY - 111);
+		$('#hover_click').css('left',event.pageX - 111);		 
+	});
+	$("#overlay_pv").mouseleave(function(event){
+		$('#hover_click').css('top',-9999);
+		$('#hover_click').css('left',-9999);		 
+	});
+
+	$("#pv_wrapper").bind('mouseleave', function (event) {
+		$('#magnify_overlay').css('display', 'block');
+		is_active = false;
+	});
+	
+	$(".zoomPad").bind('click', function (event) {	
+		$('#magnify_overlay').css('display', 'block');
+		
+	});	
+
+	$('#thumblist li a').each(function() {
+		$(this).click(function(ev) {
+			
+			var options = new Object();
+            options = $.extend({}, eval("(" + $.trim($(this).attr('rel')) + ")"));
+			$('#overlay_pv').attr('src',options.smallimage);
+		});		
+	});
+	
+});
+
+</script>
+
+<div id="hover_click" style="background-image:url(images/struct/hover_click.gif); width: 90px; height:14px; display:block; position:absolute; left:-99999px; top:-99999px; z-index:500000"></div>
+
+<div id="image_viewer">
+
+<div id="magnify_overlay">
+<img src="images/content/clients/rangerroo/thumb/1.jpg" name="overlay_pv" id="overlay_pv" style="position:absolute; top:0px; left:0px; z-index:100;">
+
+</div>
+
+
+
+        <div id="pv_wrapper">
+          <div id="pic_viewer"> <a href="images/content/clients/rangerroo/1.jpg" class="jqzoom" rel='gal1' > <img src="images/content/clients/rangerroo/thumb/1.jpg" > </a></div>
+
+        </div>
+         <a href="javascript:void(0);" id="btn_view_larger">View Larger</a>
+        <ul id="thumblist" >
+          <li><a class="zoomThumbActive" href='javascript:void(0);' rel="{gallery: 'gal1', smallimage: 'images/content/clients/rangerroo/thumb/1.jpg',largeimage: 'images/content/clients/rangerroo/1.jpg',imagetitle:'test'}">1</a></li>
+          <li><a href='javascript:void(0);' rel="{gallery: 'gal1', smallimage: 'images/content/clients/rangerroo/thumb/2.jpg',largeimage: 'images/content/clients/rangerroo/2.jpg'}">2</a></li>
+          <li><a  href='javascript:void(0);' rel="{gallery: 'gal1', smallimage: 'images/content/clients/rangerroo/thumb/3.jpg',largeimage: 'images/content/clients/rangerroo/3.jpg'}">3</a></li>
+        </ul>
+
+        <div class="grey_divider"></div>
+</div>        
+        <h1>Hardy Desk (SKU123)</h1>
+        <p style="width:320px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+       
+        <div class="body_height"></div>
+        
+		<hr />
+        
+        <ul id="sub_detail">
+        	<li><div class="heading">Price</div>
+
+            <div class="price">$128.85</div>
+            </li>
+            <li><div class="heading">Color</div>
+            <div class="price">Black</div>
+            </li>
+            <li><div class="heading">Availability</div>
+            <div class="price">In stock</div>
+
+            </li>       
+        </ul>
+        <div class="clearb"></div>
+
+
+		<hr />
+        <a class="block_but" href="product_enquiry.html" rel="shadowbox;width=400;height=400;">Product Enquiry</a>
+
+
+
+<div id="related_products"><h2>Related Products</h2>
+
+        <ul class="tile_list tile_list_small rollover_list jquery_picker num_cols_6">        
+    	<li class=""><a href="#" title="Long Image Description"><div class="description">
+          <div class="description_inner">
+            <div class="valign">
+              <div class="title">View</div>
+
+            </div>
+          </div>
+        </div>                      
+        <img src="http://placehold.it/51x51"/></a></li>
+
+        <li class=""><a href="#" title="Long Image Description"><div class="description">
+          <div class="description_inner">
+            <div class="valign">
+    <div class="title">View</div>
+</div>
+          </div>
+        </div>                      
+        <img src="http://placehold.it/51x51"/></a></li>
+        <li class=""><a href="#" title="Long Image Description"><div class="description">
+
+          <div class="description_inner">
+            <div class="valign">
+    <div class="title">View</div>
+</div>
+          </div>
+        </div>                      
+        <img src="http://placehold.it/51x51"/></a></li>
+        <li class=""><a href="#" title="Long Image Description"><div class="description">
+          <div class="description_inner">
+
+            <div class="valign">
+    <div class="title">View</div>
+</div>
+          </div>
+        </div>                      
+        <img src="http://placehold.it/51x51"/></a></li>
+        <li class=""><a href="#" title="Long Image Description"><div class="description">
+          <div class="description_inner">
+            <div class="valign">
+
+    <div class="title">View</div>
+</div>
+          </div>
+        </div>                      
+        <img src="http://placehold.it/51x51"/></a></li>
+        <li class=""><a href="#" title="Long Image Description"><div class="description">
+          <div class="description_inner">
+            <div class="valign">
+    <div class="title">View</div>
+
+</div>
+          </div>
+        </div>                      
+        <img src="http://placehold.it/51x51"/></a></li>
+        <li class=""><a href="#" title="Long Image Description"><div class="description">
+          <div class="description_inner">
+            <div class="valign">
+    <div class="title">View</div>
+</div>
+          </div>
+
+        </div>                      
+        <img src="http://placehold.it/51x51"/></a></li>
+        <li class=""><a href="#" title="Long Image Description"><div class="description">
+          <div class="description_inner">
+            <div class="valign">
+    <div class="title">View</div>
+</div>
+          </div>
+        </div>                      
+        <img src="http://placehold.it/51x51"/></a></li>
+
+        <li class=""><a href="#" title="Long Image Description"><div class="description">
+          <div class="description_inner">
+            <div class="valign">
+    <div class="title">View</div>
+</div>
+          </div>
+        </div>                      
+        <img src="http://placehold.it/51x51"/></a></li>
+        <li class=""><a href="#" title="Long Image Description"><div class="description">
+
+          <div class="description_inner">
+            <div class="valign">
+    <div class="title">View</div>
+</div>
+          </div>
+        </div>                      
+        <img src="http://placehold.it/51x51"/></a></li>
+        <li class=""><a href="#" title="Long Image Description"><div class="description">
+          <div class="description_inner">
+
+            <div class="valign">
+    <div class="title">View</div>
+</div>
+          </div>
+        </div>                      
+        <img src="http://placehold.it/51x51"/></a></li>
+        <li class=""><a href="#" title="Long Image Description"><div class="description">
+          <div class="description_inner">
+            <div class="valign">
+
+    <div class="title">View</div>
+</div>
+          </div>
+        </div>                      
+        <img src="http://placehold.it/51x51"/></a></li>
+        
+        </ul>
+		</div>
+      
+      <!-- InstanceEndEditable --> </div>
+        <!--end left_region_main-->
+        
+        <div id="right_region_main"><!-- InstanceBeginEditable name="right_region" --><div class="tile_list_with_pagination">
+        <ul class="tile_list rollover_list high_light">
+          <li class="current"><a href="#">          
+            <div class="description">
+              <div class="description_inner">
+                <div  class="valign">
+                  <div class="title">Description</div>
+                  
+                </div>
+              </div>
+            </div>
+            <img src="images/struct/111x111.gif"></a></li>
+            
+            <li class=""><a href="#">          
+            <div class="description">
+              <div class="description_inner">
+                <div  class="valign">
+                  <div class="title">Description</div>
+                  
+                </div>
+              </div>
+            </div>
+            <img src="images/struct/111x111.gif"></a></li>
+            <li class=""><a href="#">          
+            <div class="description">
+              <div class="description_inner">
+                <div  class="valign">
+                  <div class="title">Description</div>
+                  
+                </div>
+              </div>
+            </div>
+            <img src="images/struct/111x111.gif"></a></li>
+            <li class=""><a href="#">          
+            <div class="description">
+              <div class="description_inner">
+                <div  class="valign">
+                  <div class="title">Description</div>
+                  
+                </div>
+              </div>
+            </div>
+            <img src="images/struct/111x111.gif"></a></li>
+            <li class=""><a href="#">          
+            <div class="description">
+              <div class="description_inner">
+                <div  class="valign">
+                  <div class="title">Description</div>
+                  
+                </div>
+              </div>
+            </div>
+            <img src="images/struct/111x111.gif"></a></li>
+            <li class=""><a href="#">          
+            <div class="description">
+              <div class="description_inner">
+                <div  class="valign">
+                  <div class="title">Description</div>
+                  
+                </div>
+              </div>
+            </div>
+            <img src="images/struct/111x111.gif"></a></li>
+            <li class=""><a href="#">          
+            <div class="description">
+              <div class="description_inner">
+                <div  class="valign">
+                  <div class="title">Description</div>
+                  
+                </div>
+              </div>
+            </div>
+            <img src="images/struct/111x111.gif"></a></li>
+            <li class=""><a href="#">          
+            <div class="description">
+              <div class="description_inner">
+                <div  class="valign">
+                  <div class="title">Description</div>
+                  
+                </div>
+              </div>
+            </div>
+            <img src="images/struct/111x111.gif"></a></li>
+            <li class=""><a href="#">          
+            <div class="description">
+              <div class="description_inner">
+                <div  class="valign">
+                  <div class="title">Description</div>
+                  
+                </div>
+              </div>
+            </div>
+            <img src="images/struct/111x111.gif"></a></li>
+            <li class=""><a href="#">          
+            <div class="description">
+              <div class="description_inner">
+                <div  class="valign">
+                  <div class="title">Description</div>
+                  
+                </div>
+              </div>
+            </div>
+            <img src="images/struct/111x111.gif"></a></li>
+            <li class=""><a href="#">          
+            <div class="description">
+              <div class="description_inner">
+                <div  class="valign">
+                  <div class="title">Description</div>
+                  
+                </div>
+              </div>
+            </div>
+            <img src="images/struct/111x111.gif"></a></li>
+            <li class=""><a href="#">          
+            <div class="description">
+              <div class="description_inner">
+                <div  class="valign">
+                  <div class="title">Description</div>
+                  
+                </div>
+              </div>
+            </div>
+            <img src="images/struct/111x111.gif"></a></li>
+            </ul>
+        
+        
+        
+        </div><!--end tile_list_with_pagination-->
+		
+        
+        <!-- InstanceEndEditable --> </div>
+        <!--end right_region_main-->
+        
+        <div class="clearb"></div>
+      </div>
+      <!--end main_content--> 
+    </div>
+    <!--end right_col_content--> 
+    
+  </div>
+  <!--end right_col-->
+  
+  <div class="clearb"></div>
+  <div id="footer">
+    <div id="email_link"> contact&nbsp;&nbsp;&nbsp; <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#101;&#102;&#102;&#114;&#119;&#105;&#108;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#106;&#101;&#102;&#102;&#114;&#119;&#105;&#108;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></div>
+    <div id="social_media"> <a href="gplus.to/JeffRWilliams" target="_blank" id="icon_googleplus">GooglePlus</a> <a href="http://au.linkedin.com/pub/jeff-williams/1b/371/694" target="_blank" id="icon_linkedin" >LinkedIn</a> <a href="http://facebook.com/jeff.r.williams" target="_blank" id="icon_facebook" >Facebook</a> </div>
+  </div>
+</div>
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,15 @@
+ReminderID,Reminder,Date,Time,Special
+
+****REMINDER LIST STARTS HERE****,,,,
+
+&entry0=reminder,Lyndon Phillips birthday,5/03/2005,12:22,REM1&
+&entry1=reminder,Sean Taylor birthday,6/04/2005,12:22,REM2&
+&entry2=reminder,Lachlan Outhred,17/05/2005,12:22,REM3&
+&entry3=reminder,Scott Mclennon,27/05/2005,,REM4&
+&entry4=reminder,Jason Schilling,6/07/2005,,REM5&
+&entry5=reminder,Vaughan Gooding,9/09/2005,,REM6&
+&entry6=reminder,David Carter,17/09/2005,,REM7&
+&entry7=reminder,Dave Gibson,23/10/2005,,REM8&
+&entry8=reminder,Kent Steer,25/10/2005,,REM9&
+&entry9=reminder,Adam Wood,9/11/2005,,REM10&
+&entry10=reminder,pick becky up from station 5:44,25/06/2005,,REM11&
